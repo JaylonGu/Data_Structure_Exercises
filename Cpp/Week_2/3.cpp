@@ -53,7 +53,11 @@ public:
         cout << r << "+" << i << "i" << endl;
     }
 // 在此处补充你的代码
-    
+    Complex(){};
+    Complex(char* s){
+        r=s[0]-'0';
+        i=s[2]-'0';
+    }
 };
 int main() {
     Complex a;
