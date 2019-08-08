@@ -24,9 +24,38 @@ cba
 */
 
 #include <iostream>
+#include <cstring>
 using namespace std;
 
+char dest[7];
+int length;
+
+void Perm(char str[]){
+    int l=strlen(str);
+
+    if(l==1) {
+        dest[length-1]=str[0];
+        dest[length]=0;
+        cout<<dest<<endl;
+        return;
+    }
+    for(int i=0;i<l;i++){
+        dest[length-l]=str[i];
+        char tmp[7];
+        strcpy(tmp,str);
+        for(int j=i;j<l;j++){
+            tmp[j]=tmp[j+1];
+        }
+        Perm(tmp);
+    }
+    return;
+}
+
 int main(){
+    char src[7];
+    cin>>src;
+    length=strlen(src);
+    Perm(src);
 
     return 0;
 }
