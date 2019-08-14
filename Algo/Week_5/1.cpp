@@ -23,12 +23,45 @@
 5
 */
 
-#include <iostream>
+// 把前m大的都弄到数组最右边 O(n)
+// 然后对这最右边m个元素排序 O(mlogm)
+
+#include <cstdio>
+#include <algorithm>
 using namespace std;
 
+int array[100000];
 
+void swap(int &a, int &b){
+    int tmp=a;
+    a=b;
+    b=tmp;
+}
+
+void arrangeRight(int a[], int start, int end, int k){
+    if(end-start+1==k) return;
+    int i=start, j=end, key=a[start];
+    while(i<j){
+        while(i<j && a[j]>=key) --j;
+        swap(a[i],a[j]);    // 此时a[j]为key
+        while(i<j && a[i]<=key) ++i;
+        swap(a[i],a[j]);
+    }
+    int r=end-i+1;
+    if(r==k) return;
+    else if(r>k) arrangeRight(a,i+1,end,k);
+    else arrangeRight(a,start,i-1,k-r);
+}
 
 int main(){
-    
+    int n,k;
+    scanf("%d",&n);
+    for(int i=0;i<n;++i) scanf("%d",&array[i]);
+    scanf("%d",&k);
+
+    arrangeRight(array,0,n-1,k);
+    sort(array+n-k-1,array+n);
+    for(int i=n-1;i>=n-k;--i) printf("%d\n",array[i]);
+
     return 0;
 }

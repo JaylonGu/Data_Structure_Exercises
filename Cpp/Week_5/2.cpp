@@ -109,6 +109,13 @@ using namespace std;
 class MyString:public string
 {
 // 在此处补充你的代码
+	public:
+		MyString(const char* str):string(str){}
+		MyString(){}
+		MyString(const string & str):string(str){}
+		MyString operator()(int start, int length){
+			return substr(start,length);
+		}
 };
 
 

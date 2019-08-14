@@ -161,7 +161,67 @@ void strcat(char * d,const char * s)
 class MyString
 {
 // 在此处补充你的代码
-    
+	private:
+		char* s;
+	public:
+		MyString(const char* src){
+			s=new char[strlen(src)+1];
+			strcpy(s,src);
+		}
+		MyString(){
+			s=new char[1];
+			s[0]='\0';
+		}
+		MyString(const MyString &S){
+			s=new char[strlen(S.s)+1];
+			strcpy(s,S.s);
+		}
+		~MyString(){
+			delete [] s;
+		}
+		MyString& operator=(const MyString& S){
+			if(s==S.s) return *this;
+			if(strlen(s)<strlen(S.s)){
+				delete [] s;
+				s=new char[strlen(S.s)+1];
+			}
+			strcpy(s,S.s);
+			return *this;
+		}
+		friend MyString operator+(const MyString& S1, const MyString& S2){
+			char* p;
+			p=new char[strlen(S1.s)+strlen(S2.s)+1];
+			strcpy(p,S1.s);
+			strcat(p,S2.s);
+			return MyString(p);
+		}
+		void operator+=(const MyString& S){
+			*this=*this+S;
+		}
+		bool operator<(const MyString& S){
+			if(strcmp(s,S.s)==-1) return true;
+			else return false;
+		}
+		bool operator>(const MyString& S){
+			if(strcmp(s,S.s)==1) return true;
+			else return false;
+		}
+		bool operator==(const MyString& S){
+			if(strcmp(s,S.s)==0) return true;
+			else return false;
+		}
+		char& operator[](int i){
+			return s[i];
+		}
+		char* operator()(int start,int l){
+			char* c=new char[l+1];
+			for(int i=0;i<l;++i) c[i]=s[start+i];
+			c[l]='\0';
+			return c;
+		}
+		friend ostream& operator<<(ostream& o, const MyString &S){
+			return o<<S.s;
+		}    
 };
 
 
