@@ -65,6 +65,19 @@ class B {
 		B ( int n ) { nBVal = n;} 
 };
 // 在此处补充你的代码
+class D:public B{
+	private:
+		int nDVal;
+	public:
+		D(int n):B(n),nDVal(3*n){}
+		void Fun(){
+			cout<<"D::Fun"<<endl;
+		}
+		void Print(){
+			cout<<"nDVal="<<nDVal<<endl;
+		}
+};
+
 int main() { 
 	B * pb; D * pd; 
 	D d(4); d.Fun(); 
