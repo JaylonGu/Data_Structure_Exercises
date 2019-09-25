@@ -1,0 +1,6 @@
+7546 统计数字字符个数 http://noi.openjudge.cn/ch0107/01/
+* 7804 找第一个只出现一次的字符 http://noi.openjudge.cn/ch0107/02/
+7599 石头剪子布 http://noi.openjudge.cn/ch0107/04/  			
+* 7600 最长最短单词 http://noi.openjudge.cn/ch0107/25/			
+* 8173 密码翻译 http://noi.openjudge.cn/ch0107/09/			
+

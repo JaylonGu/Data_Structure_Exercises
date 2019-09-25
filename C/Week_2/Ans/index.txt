@@ -1,0 +1,5 @@
+7523 对齐输出  http://noi.openjudge.cn/ch0101/03/
+7520 输出保留12位小数的浮点数 	http://noi.openjudge.cn/ch0101/05/
+7521 空格分隔输出 	http://noi.openjudge.cn/ch0101/06/
+8221 计算球的体积 	http://noi.openjudge.cn/ch0103/12/	
+1722 大象喝水 	http://noi.openjudge.cn/ch0103/14/

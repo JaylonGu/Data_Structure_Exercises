@@ -21,10 +21,17 @@ YES
 #include <cstdio>
 using namespace std;
 
+bool contain(int k, int x){
+    if(x==k) return true;
+    if(k>x) return false;
+    return (contain(2*k+1,x)||contain(3*k+1,x));
+}
+
 int main(){
     int k,x;
     scanf("%d,%d",&k,&x);
-    
+    if(contain(k,x)) cout<<"YES";
+    else cout<<"NO";
 
     return 0;
 }

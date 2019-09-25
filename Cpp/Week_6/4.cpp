@@ -77,7 +77,7 @@ class C:public B {
 	void Fun()
 	{ cout << "C::Fun" << endl; }
 };
-void Call(
+void Call( A* p
 // 在此处补充你的代码
 ) {
 	p->Fun(); p->Do();

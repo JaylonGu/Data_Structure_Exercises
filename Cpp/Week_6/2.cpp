@@ -75,6 +75,7 @@ class C:public B {
 }; 
 void Call(
 // 在此处补充你的代码
+B & p // 不能A& p的原因是，Do()在A中不是虚函数
 ) { 
 	p.Fun(); p.Do(); 
 } 

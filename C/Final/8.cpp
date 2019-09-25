@@ -23,13 +23,15 @@ struct mystring{
 };
 
 int main(){
+    freopen("in.txt","r",stdin);
     struct mystring s[100];
     int i=0;
     while(cin>>s[i++].c);
+    i--;
     while(--i){
         cout<<s[i].c<<" ";
     }
-    cout<<s[i].c;
+    cout<<s[i].c<<endl;
 
     return 0;
 }

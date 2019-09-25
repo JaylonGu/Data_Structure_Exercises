@@ -1,0 +1,13 @@
+8218 奇偶数判断 	http://noi.openjudge.cn/ch0104/03/
+7714 求一元二次方程的根	http://noi.openjudge.cn/ch0104/20/
+7715 点和正方形的关系 http://noi.openjudge.cn/ch0104/18/
+9385 苹果和虫子2 	http://noi.openjudge.cn/ch0104/21/
+6423 简单计算器 	http://noi.openjudge.cn/ch0104/19/
+
+7582  http://noi.openjudge.cn/ch0105/04/    求整数的和与均值  
+8182  http://noi.openjudge.cn/ch0105/06/  整数序列的元素最大跨度值  
+6174  http://noi.openjudge.cn/ch0105/07/  奥运奖牌计数 
+8168  http://noi.openjudge.cn/ch0105/13/  乘方计算 
+6177  http://noi.openjudge.cn/ch0105/18/  鸡尾酒疗法
+
+

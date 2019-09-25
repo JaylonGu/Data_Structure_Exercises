@@ -1,0 +1,7 @@
+7609 与指定数字相同的数的个数 http://noi.openjudge.cn/ch0106/01/  
+7904 陶陶摘苹果 http://noi.openjudge.cn/ch0106/02/  
+7740 年龄与疾病 http://noi.openjudge.cn/ch0106/05/  
+* 7905 校门外的树 http://noi.openjudge.cn/ch0106/06/  
+* 2671 05:计算鞍点 http://noi.openjudge.cn/ch0108/05/  
+8167 13:图像模糊处理 http://noi.openjudge.cn/ch0108/13/ 
+8064 10:矩阵转置 http://noi.openjudge.cn/ch0108/10/  

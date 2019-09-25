@@ -1,0 +1,6 @@
+7518 输出第二个整数 http://noi.openjudge.cn/ch0101/02/
+7895 字符菱形 http://noi.openjudge.cn/ch0101/09/
+7558 打印ASCII码 http://noi.openjudge.cn/ch0102/07/
+7897 打印字符 http://noi.openjudge.cn/ch0102/08/
+7562 整型数据类型存储空间大小	 http://noi.openjudge.cn/ch0102/01/
+7898 浮点型数据类型存储空间大小 http://noi.openjudge.cn/ch0102/02/

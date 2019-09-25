@@ -69,11 +69,12 @@ class D:public B{
 	private:
 		int nDVal;
 	public:
-		D(int n):B(n),nDVal(3*n){}
+		D(int n):B(3*n),nDVal(n){}
 		void Fun(){
 			cout<<"D::Fun"<<endl;
 		}
 		void Print(){
+			B::Print();
 			cout<<"nDVal="<<nDVal<<endl;
 		}
 };

@@ -1,0 +1,9 @@
+10358 指针练习：输出Hello  http://cxsjsxmooc.openjudge.cn/2016hw9/1/	
+10359 指针练习:输出Tesla  http://cxsjsxmooc.openjudge.cn/2016hw9/2/	
+10366 指针练习：ForEach  http://cxsjsxmooc.openjudge.cn/2016hw9/3/	
+10360 指针练习：Memcpy之一 http://cxsjsxmooc.openjudge.cn/2016hw9/4/	
+10362 指针练习：double http://cxsjsxmooc.openjudge.cn/2016hw9/5/ 	
+10364 Memcpy之二 http://cxsjsxmooc.openjudge.cn/2016hw9/6/		
+10365 指针练习：MyMax http://cxsjsxmooc.openjudge.cn/2016hw9/7/		
+10367指针练习：SwapMemory http://cxsjsxmooc.openjudge.cn/2016hw9/9/	
+10368 指针练习：指向指针的指针 http://cxsjsxmooc.openjudge.cn/2016hw9/8/	

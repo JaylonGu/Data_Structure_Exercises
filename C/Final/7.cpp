@@ -31,6 +31,6 @@ int main(){
         if(serial[i]!=i+1) break;
     }
     if(i==n) cout<<"Jolly";
-    else cout<<"Not Jolly";
+    else cout<<"Not jolly";
     return 0;
 }

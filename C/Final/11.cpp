@@ -27,3 +27,33 @@
 2.00
 */
 
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    freopen("in (5).txt","r",stdin);
+    int N,K;
+    scanf("%d %d",&N,&K);
+    double line[10000];
+    for(int i=0;i<N;++i) scanf("%lf",&line[i]);
+    sort(line,line+N);
+    double L=0.0, R=line[N-1],M;
+    int num=0;
+    for(int i=0;i<N;++i) num+=(int)(line[i]/R);
+    if(num>=K){
+        printf("%.2f",R);
+    }else{
+        while(R-L>0.005){
+            M=(R-L)/2+L;
+            num=0;
+            for(int i=0;i<N;++i) num+=(int)(line[i]/M);
+            if(num>=K) L=M;
+            else R=M;
+        }
+        int Li=(int) (L*100);
+        printf("%.2f",Li/100.0);
+    }
+
+    return 0;
+}

@@ -1,0 +1,6 @@
+7615 成绩排序 http://noi.openjudge.cn/ch0110/03/
+7914 分数线划定 http://noi.openjudge.cn/ch0110/05/
+7618 病人排队 http://noi.openjudge.cn/ch0110/08/ 
+10420 mysort http://cxsjsxmooc.openjudge.cn/2016hw10/4/ 
+10421 从字符串中取数	http://cxsjsxmooc.openjudge.cn/2016hw10/5/	
+

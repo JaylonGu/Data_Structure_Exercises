@@ -24,16 +24,37 @@ m行，每行一个整数，为最接近相应给定值的元素值，保持输�
 */
 
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main (){
-    int n,serial[100000],m;
-    for(int i=0;i<n;i++) cin>>serial[i];
+    int n,s[100000],m;
+    cin>>n;
+    for(int i=0;i<n;i++) cin>>s[i];
+    sort(s,s+n);
     cin>>m;
     while(m--){
         int x;
         cin>>x;
-        
+        int L=0, R=n-1;
+        int M=L+(R-L)/2;
+        int minL=abs(x-s[M]), thisnum=s[M];
+        while(L<=R){
+            M=L+(R-L)/2;
+            if(s[M]>x) R=M-1;
+            else if(s[M]<x) L=M+1;
+            else{
+                thisnum=x;
+                break;
+            }
+            if(abs(x-s[M])<minL){
+                minL=abs(x-s[M]);
+                thisnum=s[M];
+            }else if(abs(x-s[M])==minL){
+                if(s[M]<thisnum) thisnum=s[M];
+            }
+        }
+        cout<<thisnum<<endl;
     }
     return 0;
 }

@@ -1,0 +1,6 @@
+* 7784 角谷猜想 http://noi.openjudge.cn/ch0105/21/	
+7542 正常血压  http://noi.openjudge.cn/ch0105/24/	
+7919 数字反转  http://noi.openjudge.cn/ch0105/29/	 
+* 7918 求特殊自然数 http://noi.openjudge.cn/ch0105/25/	 
+6042 雇佣兵 http://noi.openjudge.cn/ch0105/37/		 
+7916 数字统计 http://noi.openjudge.cn/ch0105/41/	 
