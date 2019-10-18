@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 
 template <class Elem>
@@ -22,6 +23,41 @@ protected:
         cout<<r->data<<" ";
         rpreprint(r->left);
         rpreprint(r->right);
+    }
+
+    void ipreprint(BinNode<Elem> *r){
+        stack< BinNode<Elem>* > st;
+        while(r){
+            cout<<r->data<<" ";
+            st.push(r);
+            r=r->left;
+            while(r==NULL || !st.empty()){
+                r=st.top();
+                st.pop();
+                r=r->right;
+            }
+        }
+    }
+
+    void rinprint(BinNode<Elem> *r){
+        if(!r) return;
+        rinprint(r->left);
+        cout<<r->data<<" ";
+        rinprint(r->right);
+    }
+
+    void iinprint(BinNode<Elem> *r){
+        stack< BinNode<Elem>* > st;
+        while(r){
+            st.push(r);
+            r=r->left;
+            while(r==NULL || !st.empty()){
+                r=st.top();
+                st.pop();
+                cout<<r->data<<" ";
+                r=r->right;
+            }
+        }
     }
 
     BinNode<Elem>* rfindX(Elem x, BinNode<Elem> *r){
@@ -73,11 +109,17 @@ public:
     }
 
     void preprint(){
-        rpreprint(root);
+        // rpreprint(root);
+        ipreprint(root);
         cout<<endl;
     }
 
-    
+
+
+    void inprint(){
+        rinprint(root);
+        cout<<endl;
+    }
 
     void print(){
         rprint(root,0);

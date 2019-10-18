@@ -40,7 +40,10 @@ int main()
 #include <iostream>
 using namespace std;
 
-void swap(int* &a,int* &b)
+void swap(
+// 在此处补充你的代码
+int* &a, int* &b
+)
 {
 	int * tmp = a;
 	a = b;
