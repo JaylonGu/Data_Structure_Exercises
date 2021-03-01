@@ -6,7 +6,9 @@
 
 /* 顺序实现 */
 /* 顺环队列 */
+#define ERROR NULL
 typedef int Position;   /* 此处Positon为数组下标 */
+typedef int ElementType;
 struct QNode {
     ElementType *Data;     /* 存储元素的数组，此时数组长度尚未给定 */
     Position Front, Rear;  /* 队列的头、尾指针 */

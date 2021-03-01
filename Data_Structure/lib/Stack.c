@@ -70,7 +70,7 @@ typedef PtrToSNode Stack;
 Stack CreateStack( ) 
 { /* 构建一个堆栈的头结点，返回该结点指针 */
     Stack S;
-    S = (Stack)malloc(sizeof(struct SNode));
+    S = (Stack)malloc(sizeof(struct SNode));    // 头结点
     S->Next = NULL;
     return S;
 }

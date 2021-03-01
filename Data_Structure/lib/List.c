@@ -1,5 +1,7 @@
 /* 顺序表 */
+#define MAXSIZE 10000
 typedef int Position; /* 顺序表返回的Position是数组下标 */
+typedef int ElementType;
 typedef struct LNode *List;
 struct LNode {
     ElementType Data[MAXSIZE];
@@ -144,9 +146,9 @@ bool Delete( List L, Position P )
 /* 广义表 */
 // 广义表中，元素不仅可以是单元素，还可以是另一个广义表
 // 多重链表实现
-typedef struct GNode *GList
+typedef struct GNode *GList;
 struct GNode{
-    int Tag;
+    int Tag;    // 0表示是Data，1表示是SubList
     union{
         ElementType Data;
         GList SubList;
